@@ -33,7 +33,9 @@ public class Guesser{
     }
   }
 
-
+  public String toString(){
+  return "low: " + low + " high: " + high;
+}
   /*
    * Task 2. Complete the start() method, so that
    * in the method body, you call first the
