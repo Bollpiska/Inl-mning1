@@ -24,8 +24,13 @@ public class Guesser{
 
   // Write the constructor below this line.
   public Guesser(int low, int high){
-    this.low = low;
-    this.high = high;
+    if (high > low){
+      this.low = low;
+      this.high = high;
+    }
+    else{
+      throw new IllegalArgumentException("The first parameter must be lower than the second parameter");
+    }
   }
 
 
